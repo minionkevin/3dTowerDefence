@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "res": "Character/GunCharacter",
+        "attack": 5,
+        "name": "Gun",
+        "cost": 0,
+        "type": 2,
+        "hitEffect": "eff/1"
+    },
+    {
+        "id": 2,
+        "res": "Character/KnifeCharacter",
+        "attack": 3,
+        "name": "Knife",
+        "cost": 0,
+        "type": 1,
+        "hitEffect": "eff/1"
+    },
+    {
+        "id": 3,
+        "res": "Character/MachineGunCharacter",
+        "attack": 4,
+        "name": "MachineGun",
+        "cost": 50,
+        "type": 2,
+        "hitEffect": "eff/1"
+    },
+    {
+        "id": 4,
+        "res": "Character/RifleCharacter",
+        "attack": 5,
+        "name": "Rifle",
+        "cost": 80,
+        "type": 2,
+        "hitEffect": "eff/1"
+    },
+    {
+        "id": 5,
+        "res": "Character/SniperCharacter",
+        "attack": 8,
+        "name": "Sniper",
+        "cost": 120,
+        "type": 2,
+        "hitEffect": "eff/1"
+    }
+]
