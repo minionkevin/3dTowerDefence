@@ -6,7 +6,7 @@ public abstract class BasePanel : MonoBehaviour
 {
     private CanvasGroup canvasController;
 
-    private float alphaSpeed = 0.25f;
+    private float alphaSpeed = 0.75f;
 
     protected virtual void Awake()
     {
@@ -26,7 +26,7 @@ public abstract class BasePanel : MonoBehaviour
         await canvasController.DOFade(1, alphaSpeed).SetEase(Ease.OutBack).AsyncWaitForCompletion();
     }
 
-    public virtual async void TransitionOut(UnityAction callBack)
+    public virtual async void TransitionOut()
     {
         await canvasController.DOFade(0, alphaSpeed).SetEase(Ease.InBack).AsyncWaitForCompletion();
     }

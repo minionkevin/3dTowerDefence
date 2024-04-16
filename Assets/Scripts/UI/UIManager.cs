@@ -39,10 +39,12 @@ public class UIManager
                 var panelName = typeof(T).Name;
                 if (panelDic.ContainsKey(panelName))
                 {
-                        if(hasFade)panelDic[panelName].TransitionOut(() => {
-                                GameObject.Destroy(panelDic[panelName].gameObject);
-                                panelDic.Remove(panelName);     
-                        });
+                        if (hasFade)
+                        {
+                                panelDic[panelName].TransitionOut();
+                        }
+                        GameObject.Destroy(panelDic[panelName].gameObject);
+                        panelDic.Remove(panelName);     
                 }
         }
 

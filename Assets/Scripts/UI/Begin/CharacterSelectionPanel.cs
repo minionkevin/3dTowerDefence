@@ -52,6 +52,7 @@ public class CharacterSelectionPanel : BasePanel
             if (!CanAfford())
             {
                 HandleCantAffordAnimation();
+                UIManager.Instance.ShowPanel<TipPanel>().ChangeDescription("Not enough money");
                 return;
             }
             playerData.Coin -= currHeroInfo.cost;
@@ -61,6 +62,7 @@ public class CharacterSelectionPanel : BasePanel
             GameDataMgr.Instance.SavePlayerData();
             
             HandleBuyAnimation();
+            UIManager.Instance.ShowPanel<TipPanel>().ChangeDescription("Purchase success");
         });
         
         StartBtn.onClick.AddListener(() => {
@@ -76,9 +78,9 @@ public class CharacterSelectionPanel : BasePanel
         });
     }
 
-    public override void TransitionOut(UnityAction callBack)
+    public override void TransitionOut()
     {
-        base.TransitionOut(callBack);
+        base.TransitionOut();
         if (currHero == null) return;
         DestroyImmediate(currHero);
         currHero = null;
