@@ -384,6 +384,8 @@ GameObject:
   m_Component:
   - component: {fileID: 242954188621947394}
   - component: {fileID: 1339947711288549017}
+  - component: {fileID: 634886732151611062}
+  - component: {fileID: 5661827836538843517}
   m_Layer: 0
   m_Name: GunCharacter
   m_TagString: Untagged
@@ -452,6 +454,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &634886732151611062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635709015595745808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3536ba1a5ece13d46ac9d44805ab95e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunShooter: {fileID: 1749321500311270708}
+--- !u!143 &5661827836538843517
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635709015595745808}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2.62
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.32, z: 0}
 --- !u!1 &1655534537469493302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1435,37 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.10737193, y: 0.024107754, z: 0.000001013279}
     m_Extent: {x: 1.1160322, y: 0.38367835, z: 1.4141681}
   m_DirtyAABB: 0
+--- !u!1 &4194073688554405282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749321500311270708}
+  m_Layer: 0
+  m_Name: Shooter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1749321500311270708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4194073688554405282}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.796, y: -0.076, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2779549177456640821}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &4311686283138150589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,7 +3278,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: 84108197dd9af4844b7b1e350e420ca6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1749321500311270708}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84108197dd9af4844b7b1e350e420ca6, type: 3}
 --- !u!4 &2779549177456640821 stripped

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MapSelectionPanel : BasePanel
@@ -26,6 +27,7 @@ public class MapSelectionPanel : BasePanel
             UIManager.Instance.HidePanel<MapSelectionPanel>();
             
             //todo change scene
+            SceneManager.LoadScene("GameScene1");
         });
         
         BackBtn.onClick.AddListener(() => {
