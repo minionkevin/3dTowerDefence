@@ -68,6 +68,7 @@ public class CharacterSelectionPanel : BasePanel
         StartBtn.onClick.AddListener(() => {
             GameDataMgr.Instance.CurrHeroInfo = currHeroInfo;
             UIManager.Instance.HidePanel<CharacterSelectionPanel>();
+            UIManager.Instance.ShowPanel<MapSelectionPanel>();
         });
         
         BackBtn.onClick.AddListener(() => { 

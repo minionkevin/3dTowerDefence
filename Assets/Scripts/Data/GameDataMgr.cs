@@ -6,13 +6,16 @@ public class GameDataMgr
     public static GameDataMgr Instance => instance;
 
     public MusicData MusicData;
-    public List<RoleInfo> RoleInfoList;
     public PlayerData PlayerData;
-    public RoleInfo CurrHeroInfo;
+    public List<RoleInfo> RoleInfoList;
+    public List<MapInfo> MapInfoList;
 
+    public RoleInfo CurrHeroInfo;
+    
     private GameDataMgr()
     {
         RoleInfoList = JsonMgr.Instance.LoadData<List<RoleInfo>>("RoleInfo");
+        MapInfoList = JsonMgr.Instance.LoadData<List<MapInfo>>("MapInfo");
         MusicData = JsonMgr.Instance.LoadData<MusicData>("MusicData");
         PlayerData = JsonMgr.Instance.LoadData<PlayerData>("PlayerData");
     }

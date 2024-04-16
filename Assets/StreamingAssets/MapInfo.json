@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "imgRes": "Map/Map1Icon",
+        "name": "Map A",
+        "sceneName": "GameScene1",
+        "tips": "aaa"
+    },
+    {
+        "id": 2,
+        "imgRes": "Map/Map2Icon",
+        "name": "Map B",
+        "sceneName": "GameScene2",
+        "tips": "bbb"
+    },
+    {
+        "id": 3,
+        "imgRes": "Map/Map3Icon",
+        "name": "Map C",
+        "sceneName": "GameScene3",
+        "tips": "ccc"
+    }
+]
