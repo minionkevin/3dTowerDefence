@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AubergineAnimator
+  m_Controller: {fileID: 9100000, guid: 3d23b709265fd534c99561fd0a629ded, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 8331202062901414968, guid: 2fd8367cee1e04a91b5b1f7f98b9c199, type: 3}
+    m_OverrideClip: {fileID: -4966703715190928336, guid: c8e624468e2f34143a729b6a2b11dcd8, type: 3}
+  - m_OriginalClip: {fileID: 1308870472579432090, guid: 2fd8367cee1e04a91b5b1f7f98b9c199, type: 3}
+    m_OverrideClip: {fileID: -7343802838815946665, guid: c8e624468e2f34143a729b6a2b11dcd8, type: 3}
+  - m_OriginalClip: {fileID: 221502067098257265, guid: 2fd8367cee1e04a91b5b1f7f98b9c199, type: 3}
+    m_OverrideClip: {fileID: -1630821621352246314, guid: c8e624468e2f34143a729b6a2b11dcd8, type: 3}
+  - m_OriginalClip: {fileID: -7483617201027843756, guid: 2fd8367cee1e04a91b5b1f7f98b9c199, type: 3}
+    m_OverrideClip: {fileID: 820487383006915422, guid: c8e624468e2f34143a729b6a2b11dcd8, type: 3}
+  - m_OriginalClip: {fileID: 8827447286103179901, guid: 2fd8367cee1e04a91b5b1f7f98b9c199, type: 3}
+    m_OverrideClip: {fileID: 7812942483481201633, guid: c8e624468e2f34143a729b6a2b11dcd8, type: 3}
+  - m_OriginalClip: {fileID: -5753341297207184500, guid: 2fd8367cee1e04a91b5b1f7f98b9c199, type: 3}
+    m_OverrideClip: {fileID: -5607021378430775764, guid: c8e624468e2f34143a729b6a2b11dcd8, type: 3}
