@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "res": "enemy/Aubergine",
+        "attack": 12,
+        "speed": 80,
+        "rotateSpeed": 100,
+        "health": 10,
+        "attackOffset": 0.8
+    },
+    {
+        "id": 2,
+        "res": "enemy/Avocado",
+        "attack": 8,
+        "speed": 100,
+        "rotateSpeed": 100,
+        "health": 10,
+        "attackOffset": 0.8
+    },
+    {
+        "id": 3,
+        "res": "enemy/Banana",
+        "attack": 10,
+        "speed": 80,
+        "rotateSpeed": 100,
+        "health": 10,
+        "attackOffset": 0.8
+    },
+    {
+        "id": 4,
+        "res": "enemy/Carrot",
+        "attack": 8,
+        "speed": 100,
+        "rotateSpeed": 100,
+        "health": 10,
+        "attackOffset": 0.8
+    },
+    {
+        "id": 5,
+        "res": "enemy/Chili",
+        "attack": 5,
+        "speed": 200,
+        "rotateSpeed": 100,
+        "health": 10,
+        "attackOffset": 0.8
+    }
+]

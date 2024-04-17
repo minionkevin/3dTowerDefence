@@ -7,7 +7,7 @@ public class PlayerBaseComponent : MonoBehaviour
     private bool isDead = false;
 
     private static PlayerBaseComponent instance;
-    private static PlayerBaseComponent Instance => instance;
+    public static PlayerBaseComponent Instance => instance;
 
     private void Awake()
     {
