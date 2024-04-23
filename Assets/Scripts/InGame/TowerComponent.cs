@@ -34,7 +34,7 @@ public class TowerComponent : MonoBehaviour
 
             Head.rotation = Quaternion.Slerp(Head.rotation, Quaternion.LookRotation(targetEnemyPos - Head.position), rotateSpeed * Time.deltaTime);
 
-            if (Vector3.Angle(Head.forward, targetEnemyPos - Head.position) <= 50 && Time.time - currAtkTime >= info.atkOffset)
+            if (Vector3.Angle(Head.forward, targetEnemyPos - Head.position) <= 5 && Time.time - currAtkTime >= info.atkOffset)
             {
                 targetEnemy.UnderAttack(info.attack);
                 currAtkTime = Time.time;

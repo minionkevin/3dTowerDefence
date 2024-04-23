@@ -2131,6 +2131,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7898613423536128275, guid: e3ed5b41900210048b3ea691c892f682, type: 3}
+--- !u!1001 &1836946275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 311410670819696089, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892704680558128226, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
+      propertyPath: m_Name
+      value: TowerSpawn (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d189f9f0bffa94499cb385b381447bb, type: 3}
 --- !u!1001 &1937527038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2652,3 +2709,4 @@ SceneRoots:
   - {fileID: 805450493}
   - {fileID: 8657833315734955468}
   - {fileID: 1762505229}
+  - {fileID: 1836946275}
