@@ -24,6 +24,7 @@ public class EnemyComponent : MonoBehaviour
 
     public void UnderAttack(int value)
     {
+        if (isDead) return;
         currHealth -= value;
         Animator.SetTrigger("Wound");
 
@@ -37,6 +38,7 @@ public class EnemyComponent : MonoBehaviour
         isDead = true;
         agent.isStopped = true;
         Animator.SetBool("Dead",true);
+        GameLevelMgr.Instance.CurrPlayer.AddCoin(25);
     }
 
     public void HandleDeathAnimation()

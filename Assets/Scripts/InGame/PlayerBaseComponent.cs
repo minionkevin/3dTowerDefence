@@ -24,15 +24,16 @@ public class PlayerBaseComponent : MonoBehaviour
 
     public void HandleUnderAttack(int damage)
     {
+        //todo add this back
         if (isDead) return;
         currHealth -= damage;
-        if (currHealth <= 0)
-        {
-            var panel = UIManager.Instance.ShowPanel<GameOverPanel>();
-            panel.InitInfo(GameLevelMgr.Instance.CurrPlayer.Coin/2,false);
-            currHealth = 0;
-            isDead = true;
-        }
+        // if (currHealth <= 0)
+        // {
+        //     var panel = UIManager.Instance.ShowPanel<GameOverPanel>();
+        //     panel.InitInfo(GameLevelMgr.Instance.CurrPlayer.Coin/2,false);
+        //     currHealth = 0;
+        //     isDead = true;
+        // }
         UpdateHealth(currHealth, maxHealth);
 
         // TODO game over

@@ -13,11 +13,6 @@ public class TowerComponent : MonoBehaviour
     private List<EnemyComponent> targetEnemyList = new List<EnemyComponent>();
     private Vector3 targetEnemyPos;
     private float currAtkTime;
-
-    private void Start()
-    {
-        Init(GameDataMgr.Instance.TowerInfoList[0]);
-    }
     
     public void Init(TowerInfo info)
     {
@@ -39,7 +34,7 @@ public class TowerComponent : MonoBehaviour
 
             Head.rotation = Quaternion.Slerp(Head.rotation, Quaternion.LookRotation(targetEnemyPos - Head.position), rotateSpeed * Time.deltaTime);
 
-            if (Vector3.Angle(Head.forward, targetEnemyPos - Head.position) <= 10 && Time.time - currAtkTime >= info.atkOffset)
+            if (Vector3.Angle(Head.forward, targetEnemyPos - Head.position) <= 50 && Time.time - currAtkTime >= info.atkOffset)
             {
                 targetEnemy.UnderAttack(info.attack);
                 currAtkTime = Time.time;

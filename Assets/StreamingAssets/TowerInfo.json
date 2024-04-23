@@ -42,7 +42,7 @@
     "attack": 5,
     "atkRange": 5,
     "atkOffset": 0.2,
-    "nextLevel": 2,
+    "nextLevel": 5,
     "imgRes": "TowerImg/2_1",
     "res": "Tower/Tower2_1",
     "atkType": 1
@@ -54,7 +54,7 @@
     "attack": 8,
     "atkRange": 5,
     "atkOffset": 0.18,
-    "nextLevel": 3,
+    "nextLevel": 6,
     "imgRes": "TowerImg/2_2",
     "res": "Tower/Tower2_2",
     "atkType": 1
@@ -78,7 +78,7 @@
     "attack": 10,
     "atkRange": 5,
     "atkOffset": 1,
-    "nextLevel": 2,
+    "nextLevel": 8,
     "imgRes": "TowerImg/3_1",
     "res": "Tower/Tower3_1",
     "atkType": 2
@@ -90,7 +90,7 @@
     "attack": 15,
     "atkRange": 5,
     "atkOffset": 0.8,
-    "nextLevel": 3,
+    "nextLevel": 9,
     "imgRes": "TowerImg/3_2",
     "res": "Tower/Tower3_2",
     "atkType": 2

@@ -1252,11 +1252,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960246935048432545, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
       propertyPath: m_text
-      value: 'TOWER
-
-        3
-
-        Number3'
+      value: TOWER 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960246935048432545, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
+      propertyPath: m_fontSize
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4642816204660362605, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
       propertyPath: m_Pivot.x
@@ -1337,6 +1337,10 @@ PrefabInstance:
     - target: {fileID: 4642816204660362605, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537384177735937943, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
+      propertyPath: m_text
+      value: Number3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1373,11 +1377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960246935048432545, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
       propertyPath: m_text
-      value: 'TOWER
-
-        2
-
-        Number2'
+      value: TOWER 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960246935048432545, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
+      propertyPath: m_fontSize
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4642816204660362605, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
       propertyPath: m_Pivot.x
@@ -1458,6 +1462,10 @@ PrefabInstance:
     - target: {fileID: 4642816204660362605, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537384177735937943, guid: 186c7e5331c869a42a9f2008a1f4cb45, type: 3}
+      propertyPath: m_text
+      value: Number2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

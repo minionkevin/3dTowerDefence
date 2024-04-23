@@ -38,21 +38,25 @@ public class PlayerComponent : MonoBehaviour
 
     public void KnifeEvent()
     {
-        // todo show visual
         var colliders = Physics.OverlapSphere(transform.position + transform.forward + transform.up, 1, 1 << LayerMask.NameToLayer("Monster"));
-        foreach (var monster in colliders)
+        foreach (var enemy in colliders)
         {
-            // todo add attack
+            var enemyComponent = enemy.GetComponent<EnemyComponent>();
+            if(enemyComponent.isDead) continue;
+            enemyComponent.UnderAttack(attack);
+            break;
         }
     }
 
     public void ShootEvent()
     {
-        // todo spawn ammo
         var hits = Physics.RaycastAll(new Ray(GunShooter.position, GunShooter.forward), 1000,LayerMask.NameToLayer("Monster"));
-        foreach (var monster in hits)
+        foreach (var hit in hits)
         {
-            // todo add attack
+            var enemyComponent = hit.collider.gameObject.GetComponent<EnemyComponent>();
+            if(enemyComponent.isDead) continue;
+            enemyComponent.UnderAttack(attack);
+            break;
         }
     }
 
