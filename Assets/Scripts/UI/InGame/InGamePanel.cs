@@ -23,12 +23,13 @@ public class InGamePanel : BasePanel
         });
         
         TowerButtonContainer.gameObject.SetActive(false);
+        HealthProgress.value = HealthProgress.maxValue;
     }
 
     public void UpdateHealth(int currHealth, int maxHealth)
     {
         HealthLabel.text = currHealth + " / " + maxHealth;
-        HealthProgress.value = (float)currHealth / maxHealth;
+        HealthProgress.value = (float)currHealth / maxHealth * 100;
     }
 
     public void UpdateCoinLabel(int currCoin)

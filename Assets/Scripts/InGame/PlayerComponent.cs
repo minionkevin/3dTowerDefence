@@ -1,11 +1,10 @@
-using System;
 using UnityEngine;
 
 public class PlayerComponent : MonoBehaviour
 {
     public Transform GunShooter;
+    public int Coin;
     
-    private int coin;
     private int attack;
     private float rotateSpeed = 200;
     private float moveSpeed = 10;
@@ -14,7 +13,7 @@ public class PlayerComponent : MonoBehaviour
     public void InitPlayer(int atk, int coin)
     {
         attack = atk;
-        this.coin = coin;
+        this.Coin = coin;
         UpdateCoin();
     }
 
@@ -59,12 +58,12 @@ public class PlayerComponent : MonoBehaviour
 
     private void UpdateCoin()
     {
-        UIManager.Instance.GetPanel<InGamePanel>().UpdateCoinLabel(coin);
+        UIManager.Instance.GetPanel<InGamePanel>().UpdateCoinLabel(Coin);
     }
 
     public void AddCoin(int coin)
     {
-        this.coin += coin;
+        this.Coin += coin;
         UpdateCoin();
     }
 }

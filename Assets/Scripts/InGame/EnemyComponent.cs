@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -19,6 +18,8 @@ public class EnemyComponent : MonoBehaviour
         currHealth = info.health;
         agent.speed = agent.acceleration = info.speed;
         agent.angularSpeed = info.rotateSpeed;
+        
+        agent.SetDestination(PlayerBaseComponent.Instance.transform.position);
     }
 
     public void UnderAttack(int value)
@@ -42,7 +43,11 @@ public class EnemyComponent : MonoBehaviour
 
     public void HandleDeathAnimation()
     {
-        // Destroy(this);
+        GameLevelMgr.Instance.UpdateEnemyCount(-1);
+        Destroy(this);
+        if (!GameLevelMgr.Instance.CheckGameOver()) return;
+        var panel = UIManager.Instance.ShowPanel<GameOverPanel>();
+        panel.InitInfo(GameLevelMgr.Instance.CurrPlayer.Coin,true);
     }
 
     public void HandleReborn()
@@ -56,15 +61,22 @@ public class EnemyComponent : MonoBehaviour
         if (isDead) return;
         
         Animator.SetBool("Run",agent.velocity!=Vector3.zero);
-        if (Vector3.Distance(transform.position, PlayerBaseComponent.Instance.transform.position) < 5 && Time.time - preAttack>= enemyInfo.attackOffset)
+        if (Vector3.Distance(transform.position, PlayerBaseComponent.Instance.transform.position) < 3 && Time.time - preAttack >= enemyInfo.attackOffset)
         {
             preAttack = Time.time;
-            Animator.SetTrigger("attack");
+            Animator.SetTrigger("Attack");
         }
     }
 
     public void HandleAttackAnimation()
     {
-        
+        var colliders = Physics.OverlapSphere(transform.position + transform.forward + transform.up, 1, 1 << LayerMask.NameToLayer("PlayerBase"));
+        foreach (var playerBase in colliders)
+        {
+            if (playerBase.gameObject == PlayerBaseComponent.Instance.gameObject)
+            {
+                PlayerBaseComponent.Instance.HandleUnderAttack(enemyInfo.attack);
+            }
+        }
     }
 }

@@ -115,6 +115,8 @@ public class CharacterSelectionPanel : BasePanel
         var newHero = Instantiate(Resources.Load<GameObject>(currHeroInfo.res), heroSpawnTrans);
         currHero = newHero;
         CharacterNameLabel.text = currHeroInfo.name;
+        
+        Destroy(newHero.GetComponent<PlayerComponent>());
 
         UpdateUnlockInfo();
         ToggleUnlockBtn(!playerData.UnlockCharacter.Contains(currHeroInfo.id) && currHeroInfo.cost != 0);

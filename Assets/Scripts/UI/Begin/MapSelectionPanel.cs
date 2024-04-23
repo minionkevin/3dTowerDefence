@@ -25,9 +25,10 @@ public class MapSelectionPanel : BasePanel
         
         StartBtn.onClick.AddListener(()=>{
             UIManager.Instance.HidePanel<MapSelectionPanel>();
-            
-            //todo change scene
-            SceneManager.LoadScene("GameScene1");
+            var load = SceneManager.LoadSceneAsync(currMapInfo.sceneName);
+            load.completed += (obj) => {
+                GameLevelMgr.Instance.InitInfo(currMapInfo);
+            };
         });
         
         BackBtn.onClick.AddListener(() => {

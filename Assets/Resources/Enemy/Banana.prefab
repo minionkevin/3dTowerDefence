@@ -477,8 +477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820edf200833d1549807269f375176ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
-  agent: {fileID: 0}
+  Animator: {fileID: 2884260580591040112}
+  agent: {fileID: 8119775317589128686}
   isDead: 0
 --- !u!1 &4695935060499740774
 GameObject:

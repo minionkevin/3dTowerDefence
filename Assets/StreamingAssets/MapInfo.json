@@ -4,20 +4,26 @@
         "imgRes": "Map/Map1Icon",
         "name": "Map A",
         "sceneName": "GameScene1",
-        "tips": "aaa"
+        "tips": "aaa",
+        "coin" : 200,
+        "baseHealth" : 100
     },
     {
         "id": 2,
         "imgRes": "Map/Map2Icon",
         "name": "Map B",
         "sceneName": "GameScene2",
-        "tips": "bbb"
+        "tips": "bbb",
+        "coin" : 200,
+        "baseHealth" : 100
     },
     {
         "id": 3,
         "imgRes": "Map/Map3Icon",
         "name": "Map C",
         "sceneName": "GameScene3",
-        "tips": "ccc"
+        "tips": "ccc",
+        "coin" : 200,
+        "baseHealth" : 100
     }
 ]

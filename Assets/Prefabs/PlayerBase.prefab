@@ -24116,7 +24116,7 @@ GameObject:
   - component: {fileID: 3717587804461529389}
   - component: {fileID: 4397990267894514902}
   m_Layer: 0
-  m_Name: EarthShield
+  m_Name: PlayerBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

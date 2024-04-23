@@ -28,6 +28,8 @@ public class PlayerBaseComponent : MonoBehaviour
         currHealth -= damage;
         if (currHealth <= 0)
         {
+            var panel = UIManager.Instance.ShowPanel<GameOverPanel>();
+            panel.InitInfo(GameLevelMgr.Instance.CurrPlayer.Coin/2,false);
             currHealth = 0;
             isDead = true;
         }

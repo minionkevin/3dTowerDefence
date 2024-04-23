@@ -5,6 +5,8 @@ public class MapInfo
     public string name;
     public string sceneName;
     public string tips;
+    public int coin;
+    public int baseHealth;
 }
 
 
