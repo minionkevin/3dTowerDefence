@@ -10,6 +10,7 @@ public class GameDataMgr
     public List<RoleInfo> RoleInfoList;
     public List<MapInfo> MapInfoList;
     public List<EnemyInfo> EnemyInfoList;
+    public List<TowerInfo> TowerInfoList;
 
     public RoleInfo CurrHeroInfo;
     
@@ -18,6 +19,7 @@ public class GameDataMgr
         RoleInfoList = JsonMgr.Instance.LoadData<List<RoleInfo>>("RoleInfo");
         MapInfoList = JsonMgr.Instance.LoadData<List<MapInfo>>("MapInfo");
         EnemyInfoList = JsonMgr.Instance.LoadData<List<EnemyInfo>>("EnemyInfo");
+        TowerInfoList = JsonMgr.Instance.LoadData<List<TowerInfo>>("TowerInfo");
         
         MusicData = JsonMgr.Instance.LoadData<MusicData>("MusicData");
         PlayerData = JsonMgr.Instance.LoadData<PlayerData>("PlayerData");
