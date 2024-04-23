@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a4ebbc0-b97b-4ac9-bdf8-f01205414310" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/ArtRes/MagicArsenal/Effects/Materials/ShieldRock.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtRes/MagicArsenal/Effects/Materials/ShieldRock.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArtRes/Toon_Soldiers/ToonSoldiers_2/animation/Handgun/handgun_combat_shoot.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtRes/Toon_Soldiers/ToonSoldiers_2/animation/Handgun/handgun_combat_shoot.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower1_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower1_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower1_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower1_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower1_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower1_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower2_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower2_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower2_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower2_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower2_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower2_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tower/Tower3_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tower/Tower3_1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameLevelMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameLevelMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InGame/EnemyComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InGame/EnemyComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InGame/EnemySpawnComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InGame/EnemySpawnComponent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,39 +30,43 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/EnemyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLevelMgr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InGame/EnemyComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InGame/EnemySpawnComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InGame/TowerComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InGame/GameOverPanel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2fEMPwMtiIvMC8y7CTE7nulJ9nS" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\minionkevin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\minionkevin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\minionkevin\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\minionkevin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\minionkevin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\minionkevin\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UnityHub\2022.3.17f1\Editor\Unity.exe" />
@@ -82,10 +94,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21272">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="37568">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21272" />
+      <option name="pid" value="37568" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -102,6 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713361763888</updated>
       <workItem from="1713361765151" duration="5248000" />
+      <workItem from="1713446035234" duration="13855000" />
     </task>
     <servers />
   </component>
@@ -112,5 +125,37 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Data/GameDataMgr.cs</url>
+          <line>23</line>
+          <properties documentPath="D:\Practice\3dTowerDefence\Assets\Scripts\Data\GameDataMgr.cs" initialLine="23" containingFunctionPresentation="Constructor 'GameDataMgr'">
+            <startOffsets>
+              <option value="808" />
+            </startOffsets>
+            <endOffsets>
+              <option value="870" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Data/GameDataMgr.cs</url>
+          <line>21</line>
+          <properties documentPath="D:\Practice\3dTowerDefence\Assets\Scripts\Data\GameDataMgr.cs" initialLine="21" containingFunctionPresentation="Constructor 'GameDataMgr'">
+            <startOffsets>
+              <option value="718" />
+            </startOffsets>
+            <endOffsets>
+              <option value="790" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

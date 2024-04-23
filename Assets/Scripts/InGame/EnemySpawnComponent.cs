@@ -37,7 +37,7 @@ public class EnemySpawnComponent : MonoBehaviour
         var info = GameDataMgr.Instance.EnemyInfoList[currEnemyId - 1];
         var enemy = Instantiate(Resources.Load<GameObject>(info.res), transform.position, Quaternion.identity).GetComponent<EnemyComponent>();
         enemy.Init(info);
-        GameLevelMgr.Instance.UpdateEnemyCount(1);
+        GameLevelMgr.Instance.AddEnemy(enemy);
 
         currEnemyCount--;
         if (currEnemyCount == 0)

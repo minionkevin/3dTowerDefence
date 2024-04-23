@@ -120,6 +120,37 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.098249465, y: -0.07016498, z: 0.000018119812}
     m_Extent: {x: 0.9842223, y: 0.45501155, z: 1.2000365}
   m_DirtyAABB: 0
+--- !u!1 &3780415895826104734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8387774594894422536}
+  m_Layer: 0
+  m_Name: Shooter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8387774594894422536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780415895826104734}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4988495189684883257}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6508227349156870772
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5270228964644656801}
   - component: {fileID: 6803173454019166741}
+  - component: {fileID: 1275114671761855164}
   m_Layer: 0
   m_Name: Tower2_1
   m_TagString: Untagged
@@ -146,7 +178,7 @@ Transform:
   m_GameObject: {fileID: 6508227349156870772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.0018758455, z: -2.0143665e-16}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -174,6 +206,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1275114671761855164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508227349156870772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625c0741a558f9c459531b0ac55aff6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 4988495189684883257}
+  Shooter: {fileID: 8387774594894422536}
 --- !u!1 &7328130991827417542
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +332,7 @@ Transform:
   m_LocalPosition: {x: -1.004, y: 0.00561118, z: -1.7407611e-14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8387774594894422536}
   m_Father: {fileID: 3122028568510937135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

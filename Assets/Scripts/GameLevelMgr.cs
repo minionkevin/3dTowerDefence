@@ -8,9 +8,9 @@ public class GameLevelMgr
 
     public PlayerComponent CurrPlayer;
     private List<EnemySpawnComponent> enemySpawnList = new List<EnemySpawnComponent>();
+    private List<EnemyComponent> enemyList = new List<EnemyComponent>();
     private int currWave;
     private int maxWave;
-    private int currEnemeyCount;
 
     private GameLevelMgr()
     {
@@ -43,7 +43,7 @@ public class GameLevelMgr
         {
             if (!enemy.CheckOver()) return false;
         }
-        return currEnemeyCount <= 0;
+        return enemyList.Count <= 0;
     }
 
     public void UpdateUI(int num)
@@ -60,9 +60,14 @@ public class GameLevelMgr
         UIManager.Instance.GetPanel<InGamePanel>().UpdateRoundLabel(currWave,maxWave);
     }
 
-    public void UpdateEnemyCount(int num)
+    public void AddEnemy(EnemyComponent newEnemy)
     {
-        currEnemeyCount += num;
+        enemyList.Add(newEnemy);
+    }
+    
+    public void RemoveEnemy(EnemyComponent newEnemy)
+    {
+        enemyList.Remove(newEnemy);
     }
     
     public void HandleSuccess()
@@ -70,10 +75,36 @@ public class GameLevelMgr
         
     }
 
+    public EnemyComponent FindNewEnemy(Vector3 pos, int range)
+    {
+        foreach (var enemy in enemyList)
+        {
+            if (!enemy.isDead && Vector3.Distance(pos, enemy.transform.position) <= range)
+            {
+                return enemy;
+            }
+        }
+        return null;
+    }
+    
+    public List<EnemyComponent> FindNewEnemies(Vector3 pos, int range)
+    {
+        List<EnemyComponent> targets = new List<EnemyComponent>();
+        foreach (var enemy in enemyList)
+        {
+            if (!enemy.isDead && Vector3.Distance(pos, enemy.transform.position) <= range)
+            {
+                targets.Add(enemy);
+            }
+        }
+        return targets;
+    }
+
     public void CleanUp()
     {
         enemySpawnList.Clear();
-        currEnemeyCount = currWave = maxWave = 0;
+        enemyList.Clear();
+        currWave = maxWave = 0;
         CurrPlayer = null;
     }
 }

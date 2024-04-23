@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Gun-01",
+    "cost": 50,
+    "attack": 10,
+    "atkRange": 5,
+    "atkOffset": 0.5,
+    "nextLevel": 2,
+    "imgRes": "TowerImg/1_1",
+    "res": "Tower/Tower1_1",
+    "atkType": 1
+  },
+  {
+    "id": 2,
+    "name": "Gun-02",
+    "cost": 80,
+    "attack": 15,
+    "atkRange": 5,
+    "atkOffset": 0.45,
+    "nextLevel": 3,
+    "imgRes": "TowerImg/1_2",
+    "res": "Tower/Tower1_2",
+    "atkType": 1
+  },
+  {
+    "id": 3,
+    "name": "Gun-03",
+    "cost": 120,
+    "attack": 25,
+    "atkRange": 5,
+    "atkOffset": 0.4,
+    "nextLevel": 0,
+    "imgRes": "TowerImg/1_3",
+    "res": "Tower/Tower1_3",
+    "atkType": 1
+  },
+  {
+    "id": 4,
+    "name": "Bow-01",
+    "cost": 50,
+    "attack": 5,
+    "atkRange": 5,
+    "atkOffset": 0.2,
+    "nextLevel": 2,
+    "imgRes": "TowerImg/2_1",
+    "res": "Tower/Tower2_1",
+    "atkType": 1
+  },
+  {
+    "id": 5,
+    "name": "Bow-02",
+    "cost": 80,
+    "attack": 8,
+    "atkRange": 5,
+    "atkOffset": 0.18,
+    "nextLevel": 3,
+    "imgRes": "TowerImg/2_2",
+    "res": "Tower/Tower2_2",
+    "atkType": 1
+  },
+  {
+    "id": 6,
+    "name": "Bow-03",
+    "cost": 120,
+    "attack": 12,
+    "atkRange": 5,
+    "atkOffset": 0.15,
+    "nextLevel": 0,
+    "imgRes": "TowerImg/2_3",
+    "res": "Tower/Tower2_3",
+    "atkType": 1
+  },
+  {
+    "id": 7,
+    "name": "Frozen-01",
+    "cost": 50,
+    "attack": 10,
+    "atkRange": 5,
+    "atkOffset": 1,
+    "nextLevel": 2,
+    "imgRes": "TowerImg/3_1",
+    "res": "Tower/Tower3_1",
+    "atkType": 2
+  },
+  {
+    "id": 8,
+    "name": "Frozen-02",
+    "cost": 80,
+    "attack": 15,
+    "atkRange": 5,
+    "atkOffset": 0.8,
+    "nextLevel": 3,
+    "imgRes": "TowerImg/3_2",
+    "res": "Tower/Tower3_2",
+    "atkType": 2
+  },
+  {
+    "id": 9,
+    "name": "Frozen-03",
+    "cost": 120,
+    "attack": 25,
+    "atkRange": 5,
+    "atkOffset": 0.6,
+    "nextLevel": 0,
+    "imgRes": "TowerImg/3_3",
+    "res": "Tower/Tower3_3",
+    "atkType": 2
+  }
+]

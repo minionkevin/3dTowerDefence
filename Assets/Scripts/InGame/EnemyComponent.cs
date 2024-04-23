@@ -26,12 +26,10 @@ public class EnemyComponent : MonoBehaviour
     {
         currHealth -= value;
         Animator.SetTrigger("Wound");
-        
-        if (currHealth <= 0)
-        {
-            currHealth = 0;
-            HandleDeath();
-        }
+
+        if (currHealth > 0) return;
+        currHealth = 0;
+        HandleDeath();
     }
 
     private void HandleDeath()
@@ -43,8 +41,8 @@ public class EnemyComponent : MonoBehaviour
 
     public void HandleDeathAnimation()
     {
-        GameLevelMgr.Instance.UpdateEnemyCount(-1);
-        Destroy(this);
+        GameLevelMgr.Instance.RemoveEnemy(this);
+        Destroy(gameObject);
         if (!GameLevelMgr.Instance.CheckGameOver()) return;
         var panel = UIManager.Instance.ShowPanel<GameOverPanel>();
         panel.InitInfo(GameLevelMgr.Instance.CurrPlayer.Coin,true);
